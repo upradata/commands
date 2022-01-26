@@ -1,0 +1,21 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "lib-esm",
+        "module": "ESNext",
+        "paths": {
+            "#is-cli": [
+                "src/utils/is-cli.mts"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.mts",
+    ],
+    "exclude": [
+        "node_modules",
+        "src/**/*.example.ts",
+        "src/**/*.spec.ts"
+    ]
+}

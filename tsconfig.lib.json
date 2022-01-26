@@ -1,0 +1,22 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "lib",
+        "module": "CommonJS",
+        "paths": {
+            "#is-cli": [
+                "src/utils/is-cli.cts"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.cts",
+    ],
+    "exclude": [
+        "node_modules",
+        /* "!node_modules/yargs", */
+        "src/**/*.example.ts",
+        "src/**/*.spec.ts"
+    ]
+}
